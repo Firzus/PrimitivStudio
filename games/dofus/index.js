@@ -326,7 +326,8 @@ const draggle = new Sprite({
         max: 4,
         hold: 30
     },
-    animate: true
+    animate: true,
+    isEnemy: true
 })
 
 const embyImage = new Image()
@@ -352,6 +353,7 @@ function animateBattle() {
     emby.draw()
 }
 
+//animate()
 animateBattle()
 
 document.querySelectorAll('button').forEach((button) => {
