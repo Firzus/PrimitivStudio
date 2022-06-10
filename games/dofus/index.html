@@ -1,7 +1,7 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"><script src="librairie.js"></script>
 
     <style>
         * {
@@ -126,15 +126,28 @@
             display: flex;"
         >
         <div
+            id="dialogueBox"
+            style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                background-color: white;
+                padding: 12px;
+                display: none;
+                cursor: pointer;
+            "
+        >
+            zezerzerzerz
+        </div>
+        <div
+            id="attacksBox"
             style="
                 width: 66.66%;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);"
             >
-            <button>Tackle</button>
-            <button>Attack2</button>
-            <button>Attack3</button>
-            <button>Attack4</button>
         </div>
         <div
             style="
@@ -144,12 +157,20 @@
                 width: 33.33%;
                 border-left: 4px black solid;"
             >
-            <h1>Attack Type</h1>
+            <h1
+                style="
+                    font-size: 16px;"
+            >
+                Attack Type
+            </h1>
         </div>
     </div>
 </div>
 <script src="librairie.js"></script>
-<script src="data/collisions.js"></script>
 <script src="data/battleZones.js"></script>
+<script src="data/collisions.js"></script>
+<script src="data/attacks.js"></script>
+<script src="data/monsters.js"></script>
 <script src="classes.js"></script>
 <script src="index.js"></script>
+<script src="battleScene.js"></script>
