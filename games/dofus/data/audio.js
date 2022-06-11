@@ -1,0 +1,5 @@
+const audio = {
+    Map: {
+        src: ./
+    }
+}
