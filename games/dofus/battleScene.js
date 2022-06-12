@@ -64,6 +64,7 @@ function initBattle() {
                                 })
 
                                 battle.initiated = false
+                                audio.map.play()
                             }
                         })
                     })
@@ -98,6 +99,7 @@ function initBattle() {
                                 })
 
                                 battle.initiated = false
+                                audio.map.play()
                             }
                         })
                     })
@@ -117,16 +119,15 @@ function animateBattle() {
     battleAnimationId = window.requestAnimationFrame(animateBattle)
     battleBackground.draw()
 
-    console.log(battleAnimationId)
-
     renderedSprites.forEach((sprite) => {
         sprite.draw()
     })
 }
 
-//animate()
-initBattle()
-animateBattle()
+animate() // Map
+
+//initBattle() // Battle
+//animateBattle() // Battle
 
 document.querySelector('#dialogueBox').addEventListener('click', (e) => {
     if (queue.length > 0) {

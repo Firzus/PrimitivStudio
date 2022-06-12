@@ -147,7 +147,6 @@ function animate() {
 
     let moving = true
     player.animate = false
-    console.log(animationId)
     
     if (battle.initiated) return
 
@@ -176,10 +175,12 @@ function animate() {
                 && Math.random() < 0.01
             ) {
 
-            console.log('activate battle')
-
             // desactivate current animation loop
             window.cancelAnimationFrame(animationId)
+
+            audio.map.stop()
+            audio.initBattle.play()
+            audio.battle.play()
 
             battle.initiated = true
             gsap.to('#overlappingDiv', {
@@ -338,5 +339,13 @@ window.addEventListener('keyup', (e) => {
         case 'd':
             keys.d.pressed = false
             break
+    }
+})
+
+let clicked = false
+addEventListener('click', () => {
+    if (!clicked) {
+        audio.map.play()
+        clicked = true
     }
 })
