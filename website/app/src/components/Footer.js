@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
 
-class Header extends Component {
+class Footer extends Component {
     render() {
         return (
             <>
-                Header
+                footer
             </>
         );
     };
 }
 
-export default Header;
+export default Footer;

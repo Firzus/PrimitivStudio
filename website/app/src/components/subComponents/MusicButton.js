@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Col, Row, Container } from 'react-bootstrap';
 
-class Header extends Component {
+class MusicButton extends Component {
     render() {
         return (
             <>
-                Header
+                MusicButton
             </>
         );
     };
 }
 
-export default Header;
+export default MusicButton;
