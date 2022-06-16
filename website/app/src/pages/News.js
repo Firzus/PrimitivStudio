@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
-const News = () =>  (
-    <div>
-        News page
-    </div>
-);
+class News extends Component {
+    render() {
+        return (
+            <>
+                <Header />
+                News
+                <Footer />
+            </>
+        );
+    };
+}
 
 export default News;

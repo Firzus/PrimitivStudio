@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
-const History = () =>  (
-    <div>
-        history page
-    </div>
-);
+class History extends Component {
+    render() {
+        return (
+            <>
+                <Header />
+                    history
+                <Footer />
+            </>
+        );
+    };
+}
 
 export default History;
