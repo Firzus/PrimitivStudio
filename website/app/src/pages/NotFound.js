@@ -41,14 +41,9 @@ const NotFound = () =>  (
                     <Row className='pt-3'>
                         <Link
                             to="/"
-                            className='d-flex justify-content-center text-decoration-none'
+                            className='d-flex justify-content-center font-link text-decoration-none changeColorRed text-uppercase text-white fs-4'
                         >
-                            <button
-                                className='btn btn-outline-danger font-link text-uppercase text-white fs-4'
-                                type='button'
-                            >
-                                go
-                            </button>
+                            go
                         </Link>
                     </Row>
                 </Row>
