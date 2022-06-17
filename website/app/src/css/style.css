@@ -6,3 +6,7 @@
     color: red !important;
     text-decoration: underline !important;
 }
+
+.colorPurple {
+    background-color: #341E63;
+}
