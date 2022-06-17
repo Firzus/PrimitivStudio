@@ -5,8 +5,8 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Col className='font-face-local'>
-                    Let me duck you pls :(
+                <Col className='font-link'>
+                    okok
                 </Col>
             </>
         );
