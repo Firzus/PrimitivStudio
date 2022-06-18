@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, Button, Container } from 'react-bootstrap';
+import { Nav, Navbar, Button, Container, Col, Row } from 'react-bootstrap';
 
 class Header extends Component {
     render() {
@@ -9,7 +9,7 @@ class Header extends Component {
                 <Container fluid className='colorPurple'>
                 <Navbar expand="lg" className='p-4' fluid>
                     <Container>
-                        <Navbar.Brand as={NavLink} to="/">
+                        <Navbar.Brand className='logoTopMedia spacingMedia' as={NavLink} to="/">
                             <img
                                 src="http://localhost:1337/uploads/Logo_instin_white_3a71663b2a.png?updated_at=2022-06-17T16:46:18.789Z"
                                 width="120"
@@ -18,17 +18,22 @@ class Header extends Component {
                                 alt="Instin logo"
                             />
                         </Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav"  className='justify-content-end'>
-                            <Nav>
-                                <Button as={NavLink} variant='light' className='btn fs-5 rounded-pill' to="/">Home</Button>   
-                                <Button as={NavLink} variant='light' className='btn fs-5 rounded-pill' to="/news">News</Button>
-                                <Button as={NavLink} variant='light' className='btn fs-5 rounded-pill' to="/characters">Characters</Button>
-                                <Button as={NavLink} variant='light' className='btn fs-5 rounded-pill' to="/history">History</Button>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" className=''/>
+                        <Navbar.Collapse id="basic-navbar-nav"  className='navbarTopMedia'>
+                            <Nav className='w-50 d-flex justify-content-around'>
+                                <NavLink className='fs-5 spacingMedia rounded-pill navbarTop text-center' to="/">Home</NavLink>   
+                                <NavLink className='fs-5 spacingMedia rounded-pill navbarTop text-center' to="/news">News</NavLink>
+                                <NavLink className='fs-5 spacingMedia rounded-pill navbarTop text-center' to="/history">History</NavLink>
+                                <NavLink className='fs-5 spacingMedia rounded-pill navbarTop text-center' to="/characters">Characters</NavLink>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+                <Row style={{height : '1000px'}} className="">
+                    <Col>
+
+                    </Col>
+                </Row>
                 </Container>
             </>
         );

@@ -1,3 +1,24 @@
+@media only screen and (max-width: 600px) {
+    .navbarTopMedia {
+        justify-content: center !important;
+        display: flex;
+    }
+ }
+
+@media only screen and (max-width: 600px) {
+    .logoTopMedia {
+        justify-content: center !important;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .spacingMedia {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
 .font-link {
     font-family: 'Press Start 2P', cursive;
 }
@@ -8,5 +29,27 @@
 }
 
 .colorPurple {
-    background-color: #341E63;
+    background: linear-gradient(#010204 , #5C67C9);
+}
+
+.navbarTop{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navbarTop:hover, .navbarTop.active{
+    background: white;
+    color: #060A16;
+}
+
+.navbarTopMedia{
+    display: flex;
+    justify-content: end;
+}
+
+.styleToggle:hover{
+    color: white !important;
+    background-color: white !important;
 }
