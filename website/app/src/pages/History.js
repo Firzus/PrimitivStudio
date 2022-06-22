@@ -7,8 +7,6 @@ class History extends Component {
         return (
             <>
                 <Header />
-                    history
-                <Footer />
             </>
         );
     };

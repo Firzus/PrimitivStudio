@@ -53,3 +53,11 @@
     color: white !important;
     background-color: white !important;
 }
+
+.pointerEvent{
+    cursor: pointer;
+}
+
+.background-grey{
+    background-color: #181414!important ;
+}

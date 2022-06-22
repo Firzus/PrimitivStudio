@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 class Characters extends Component {
@@ -7,8 +6,6 @@ class Characters extends Component {
         return (
             <>
                 <Header />
-                characters
-                <Footer />
             </>
         );
     };

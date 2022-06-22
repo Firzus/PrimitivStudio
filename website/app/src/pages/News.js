@@ -7,8 +7,6 @@ class News extends Component {
         return (
             <>
                 <Header />
-                News
-                <Footer />
             </>
         );
     };
