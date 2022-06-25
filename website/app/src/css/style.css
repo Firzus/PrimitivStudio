@@ -1,12 +1,5 @@
 @media only screen and (max-width: 600px) {
-    .navbarTopMedia {
-        justify-content: center !important;
-        display: flex;
-    }
- }
-
-@media only screen and (max-width: 600px) {
-    .logoTopMedia {
+    .navbarTopMedia .logoTopMedia {
         justify-content: center !important;
         display: flex;
     }
@@ -29,43 +22,84 @@
 }
 
 .colorPurple {
-    background: linear-gradient(#010204 , #5C67C9);
+    background: linear-gradient(#010204, #5C67C9);
 }
 
-.navbarTop{
+.navbarTop {
     text-decoration: none;
     color: white;
     padding: 6px 15px;
     border-radius: 20px;
 }
 
-.navbarTop:hover, .navbarTop.active{
+.navbarTop:hover,
+.navbarTop.active {
     background: white;
     color: #060A16;
 }
 
-.navbarTopMedia{
+.navbarTopMedia {
     display: flex;
     justify-content: end;
 }
 
-.styleToggle:hover{
+.styleToggle:hover {
     color: white !important;
     background-color: white !important;
 }
 
-.pointerEvent{
+.pointerEvent {
     cursor: pointer;
 }
 
-.background-grey{
-    background-color: #181414!important ;
+.background-grey {
+    background-color: #181414 !important;
 }
 
-.decoration-underline{
+.decoration-underline {
     text-decoration: none;
 }
 
-.decoration-underline:hover{
+.decoration-underline:hover {
     text-decoration: underline;
+}
+
+.backgroundHome {
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stars {
+    mix-blend-mode: screen;
+}
+
+.buttonPlay {
+    padding: 8px 30px !important;
+    border-radius: 40px !important;
+    color: #2b1055;
+}
+
+.textHome {
+    color: #fff;
+    white-space: nowrap;
+    z-index: 9;
+    font-size: 7.5vw;
 }

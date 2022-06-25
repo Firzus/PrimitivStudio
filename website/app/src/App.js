@@ -4,11 +4,11 @@ import History from './pages/History';
 import Home from './pages/Home';
 import News from './pages/News';
 import NotFound from './pages/NotFound';
-import { ParallaxProvider } from 'react-scroll-parallax';
+// import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-    <ParallaxProvider>
+//    <ParallaxProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
-    </ParallaxProvider>
+//    </ParallaxProvider>
   );
 }
 

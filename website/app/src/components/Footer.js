@@ -20,6 +20,7 @@ class Footer extends Component {
                                         src="http://localhost:1337/uploads/Logo_instin_white_3a71663b2a.png?updated_at=2022-06-17T16:46:18.789Z"
                                         width="120"
                                         height="28"
+                                        className='fluid-img'
                                         alt="Instin logo"
                                     />
                                 </Col>
